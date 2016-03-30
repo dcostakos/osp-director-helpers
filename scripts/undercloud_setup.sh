@@ -33,7 +33,7 @@ echo "Registering to Red Hat"
 subscription-manager register --username=${rhsm_username} --password=${rhsm_password}
 subscription-manager attach --pool=${rhsm_pool_id}
 subscription-manager repos --disable=*
-subscription-manager repos --enable=rhel-7-server-rpms --enable=rhel-7-server-optional-rpms --enable=rhel-7-server-extras-rpms --enable=rhel-7-server-openstack-7.0-rpms --enable=rhel-7-server-openstack-7.0-director-rpms
+subscription-manager repos --enable=rhel-7-server-rpms --enable=rhel-7-server-extras-rpms --enable=rhel-7-server-openstack-7.0-rpms --enable=rhel-7-server-openstack-7.0-director-rpms --enable rhel-7-server-rh-common-rpms
 echo "DONE"
 
 echo "Updating Packages"
