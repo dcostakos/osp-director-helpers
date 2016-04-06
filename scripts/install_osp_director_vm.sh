@@ -21,7 +21,7 @@
 # Note: Presumed that a public brige for routable networking traffic and a private bridge for OverCloud provisioning 
 #       are already setup on the physical host
 #
-# Example: sudo ./install_undercloud_vm.sh --reg-username RHN_Username --reg-password RHN_Password --reg-pool RHN_Subscription_Pool --rootpw redhat321 --public-bridge br-public --private-bridge br-prov --prov-network-cidr 192.0.2 --vm-hostname rhel-osp-director.localdomain
+# Example: sudo ./install_osp_director_vm.sh --reg-username RHN_Username --reg-password RHN_Password --reg-pool RHN_Subscription_Pool --rootpw redhat321 --public-bridge br-public --private-bridge br-prov --prov-network-cidr 192.0.2 --vm-hostname rhel-osp-director.localdomain
 
 set_args()  {
   while [ "$1" != "" ]; do
